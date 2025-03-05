@@ -1,0 +1,27 @@
+package oops;
+
+public class Student {
+	//data
+	int id;
+	String name;
+	String course;
+	String clg_name;
+	//operation
+	void setdata(int i, String n, String c, String cl) {
+		id = i;
+		name = n;
+		course = c;
+		clg_name = cl;
+	}
+	void getData() {
+		System.out.println(id + " "+name+" "+course+" "+clg_name);
+	}
+	public static void main(String[] args) {
+		Student stu1 = new Student();
+		stu1.setdata(1, "Rahul", "B.tech", "MIET");
+		stu1.getData();
+		Student stu2 = new Student();
+		stu2.setdata(2, "Nihal", "BCA", "GDC");
+		stu2.getData();
+	}
+}
