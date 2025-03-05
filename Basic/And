@@ -1,0 +1,15 @@
+public class And {
+	public static void main(String[] args) {
+		int x = 60;
+		String gender="f";
+		if ((x>75) && (gender=="F"||gender =="f")){
+			System.out.println("You are selected for Operating Team");
+		}
+		else if ((x>75)&&(gender=="m"||gender=="M")) {
+			System.out.println("You are selected for Marketing Team");
+		}
+		else {
+			System.out.println("You are not fitted in the given criteria!!! BETTER LUCK NEXT TIME!!");
+		}
+	}
+}
