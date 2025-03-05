@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Volume {
+	  public double side;
+	  public Volume(double side) {
+	       this.side = side;
+	    }
+	    public double calculateVolume() {
+	        return side * side * side;
+	    }
+
+	    public void displayVolume() {
+	        System.out.println("Volume of the Cube: " + calculateVolume());
+	    }
+
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter the side of the cube: ");
+	        double side = scanner.nextDouble();
+	        Volume cube = new Volume(side);
+	        cube.displayVolume();
+
+	        scanner.close();
+	    }
+}
