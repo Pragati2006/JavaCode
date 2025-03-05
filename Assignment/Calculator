@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Main2 {
+    private int num1, num2;
+    
+    public void setNumbers(int a, int b) {
+        num1 = a;
+        num2 = b;
+    }
+    
+    public int add() {
+        return num1 + num2;
+    }
+    
+    public int subtract() {
+        return num1 - num2;
+    }
+    
+    public int multiply() {
+        return num1 * num2;
+    }
+    
+    public double divide() {
+        if (num2 != 0) {
+            return (double) num1 / num2;
+        } else {
+            return 0.0;
+    }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
+        
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
+        
+        Main2 calc = new Main2();
+        calc.setNumbers(num1,num2);
+        
+        System.out.println("Addition: " + calc.add());
+        System.out.println("Subtraction: " + calc.subtract());
+        System.out.println("Multiplication: " + calc.multiply());
+        System.out.println("Division: " + calc.divide());
+        
+        scanner.close();
+    }
+}
